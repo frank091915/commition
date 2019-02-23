@@ -35,7 +35,7 @@
 					this.$http.gethomelist(_id).then(res=>{
 					this.homelist=res.data.res_body.list;
 					cache[_id]=res.data.res_body.list;
-					console.log(cache)
+//					console.log(cache)
 				})
 				}
 				

@@ -71,6 +71,7 @@
 					this.$router.push(`/home/${this.classify[0].id}`)
 				})
 			})
+			console.log(this.$route)
 		}
 		
 	}

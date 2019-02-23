@@ -27,7 +27,7 @@
 		        '外套',		        
 		        '英伦马丁靴',
 		        '男装新款',
-		        '哈伦裤',
+		        '哈伦裤子',
 		        '破洞牛仔裤',
 		        '温暖打底裤',
 		        'a字半身裙',
@@ -35,7 +35,7 @@
 		        '棒球帽',
 		        '渔夫帽',
 		        '时尚挎包',
-		        '包包',
+		        '抖音同款挎包',
 		        '开衫毛衣',
 		        '羽绒服',
 		        '雪地靴',
@@ -86,6 +86,7 @@
 		height: 12vw;
 		justify-content: space-around;
 		align-items: center;
+				
 		img{
 				width:8vw;
 				
@@ -94,6 +95,10 @@
 		#headSearch{
 			height: 10vw;
 			
+			.mint-search-list-warp{
+				position: relative;
+				z-index: 10;
+			}
 			.mint-searchbar{
 				padding: 0;
 				background-color:white;

@@ -19,6 +19,7 @@ const homelist =()=>import("@/pages/homelist");
 const detail =()=>import("@/pages/detail");
 const login =()=>import("@/pages/login");
 
+
 const routes=[
 	{
 		path:"/",
@@ -41,8 +42,9 @@ const routes=[
         meta:{
         	navtitle:"首页",
         	isnav:true,
-//      	动态绑定图片用require
-        	src:require("../assets/upload_29e515a6k59k937a3ej3l5e6bfji2_36x39.png")
+        	//动态绑定
+        	_src:require("../assets/upload_29e515a6k59k937a3ej3l5e6bfji2_36x39.png"),
+       		src:require("../assets/upload_439ak5453ih43h5d2a109dhe71agg_36x39.png")
         },
         children:[     	
       	{
@@ -69,8 +71,8 @@ const routes=[
         meta:{
         	navtitle:"分类",
         	isnav:true,
-//      	动态绑定图片用require
-        	src:require("../assets/upload_3egkhdd8460el241d98kcl706ke65_34x34.png")
+        	src:require("../assets/upload_3egkhdd8460el241d98kcl706ke65_34x34.png"),
+        	_src:require("../assets/upload_488lbkj7ll3e92bg3ld1kh5k73l87_34x34.png")
         }
 	},
 	{
@@ -85,15 +87,14 @@ const routes=[
         meta:{
         	navtitle:"购物车",
         	isnav:true,
-//      	动态绑定图片用require
-        	src:require("../assets/upload_0eabagglh39aggl8jihfakfbf70a9_40x38.png")
+        	src:require("../assets/upload_0eabagglh39aggl8jihfakfbf70a9_40x38.png"),
+        	_src:require("../assets/upload_565i382k0hi45ek6chhj5603d41a8_40x38.png")
         }
 	},
 	{
 		path: '/mine', 
 		name:"mine",
-        components:{
-        	head:commonHeader,
+        components:{        	
         	main:mine,
         	tabbar:tabbar
         	
@@ -101,8 +102,8 @@ const routes=[
         meta:{
         	navtitle:"我的",
         	isnav:true,
-//      	动态绑定图片用require
-        	src:require("../assets/upload_5g85l55d280l94lfg678lcleegf5e_38x38.png")
+        	src:require("../assets/upload_5g85l55d280l94lfg678lcleegf5e_38x38.png"),
+        	_src:require("../assets/idid_ifqtkztcgjstazrumezdambqgyyde_38x38.png")
         }
 	},
 	{

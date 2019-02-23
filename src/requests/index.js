@@ -66,6 +66,9 @@ const gethomelist=(id)=>{
 const getdetail=(id)=>{
 	return ajax.get("/detail?id="+id)
 }
+//minelist
+const getminelist=()=>{
+	return ajax.get("/mine")
+}
 
-
-export{gethomeswiper,getrecommend,getclassify,gethomelist,getdetail,}
+export{gethomeswiper,getrecommend,getclassify,gethomelist,getdetail,getminelist,}

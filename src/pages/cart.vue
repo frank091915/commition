@@ -12,7 +12,7 @@
 			<div class="del" @click="deletedata(item.id)"></div>
 		</div>
 		<div class="totalprice">
-			总价￥{{totalprice}}
+			总价￥{{totalprice.toFixed(2)}}
 		</div>
 	</div>
 	
@@ -76,7 +76,7 @@
 		}
 		.totalprice{
 			position: fixed;
-			top: 152vw;
+			bottom: 15vw;
 			line-height: 40px;
 			width: 100%;
 			text-align: right;
